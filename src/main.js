@@ -15,8 +15,8 @@ import bootstrap from './assets/css/bootstrap.min.css'
 
 /* add icons to the library */
 library.add(faUserSecret)
-
-createApp(App)
-.component('font-awesome-icon', FontAwesomeIcon)
-.component('bootstrap', bootstrap)
-.mount('#app')
+/* eslint-disable */
+const app = createApp(App)
+app.component('font-awesome-icon', FontAwesomeIcon)
+app.component('bootstrap', bootstrap)
+app.mount('#app')
